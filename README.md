@@ -5,8 +5,8 @@
 This is a Java-based date management system that handles date validation, calculations, and sorting. It supports both manual date entry and file input, while maintaining a history of all entered dates.
 The program provides four main options:
 1. **Manual date entry** – Users can input dates manually.
-2. **Date history and sorting** – View and sort all previously entered dates.
-3. **Date comparison** – Compare two dates and calculate the difference.
+2. **Date comparison** – Compare two dates and calculate the difference.
+3. **Date history and sorting** – View and sort all previously entered dates.
 
 ---
 
@@ -44,8 +44,8 @@ Welcome to Date Structure project! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
 Here are your options:
 1) Enter dates manually.
-2) View and sort date history.
-3) Compare two dates.
+2) Compare two dates.
+3) View and sort date history.
 4) Exit.
 
 Choose an option: 1
