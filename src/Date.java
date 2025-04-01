@@ -149,43 +149,36 @@ public class Date implements Comparable<Date> {
 
         while (true) {
             System.out.print("\nEnter day (1-31): ");
+            int day = input.nextInt();
 
-            if(input.hasNextInt()) {
-                int day = input.nextInt();
+            System.out.print("Enter month (1-12): ");
+            int month = input.nextInt();
 
-                System.out.print("Enter month (1-12): ");
-                int month = input.nextInt();
+            System.out.print("Enter year: ");
+            int year = input.nextInt();
 
-                System.out.print("Enter year: ");
-                int year = input.nextInt();
+            input.nextLine(); // Clear buffer
 
-                input.nextLine(); // Clear buffer
+            Date userDate = new Date(day, month, year);
+            System.out.print("\n(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ \nYour date is ");
 
-                Date userDate = new Date(day, month, year);
-                System.out.print("\n(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ \nYour date is ");
+            if (userDate.isValidDate()) {
+                userDate.printDate();
+                System.out.println("Day of week: " + userDate.getDayOfWeek());
+                System.out.println("Valid date!");
 
-                if (userDate.isValidDate()) {
-                    userDate.printDate();
-                    System.out.println("Day of week: " + userDate.getDayOfWeek());
-                    System.out.println("Valid date!");
-
-                    dateHistory.add(userDate + " (" + userDate.getDayOfWeek() + ")");
-                }
-                else {
-                    System.out.println("Invalid date! (シ_ _)シ");
-                }
-
-                System.out.print("\nAdd another date? (y/n): ");
-                String choice = input.nextLine().trim();
-
-                if (choice.equalsIgnoreCase("n")) {
-                    System.out.println("Returning to menu... ( ° ∀ ° )ﾉﾞ");
-                    break;
-                }
+                dateHistory.add(userDate + " (" + userDate.getDayOfWeek() + ")");
             }
-            else{
-                System.out.println("Please enter a number! (シ_ _)シ");
-                input.nextLine(); // Clear buffer
+            else {
+                System.out.println("Invalid date! (シ_ _)シ");
+            }
+
+            System.out.print("\nAdd another date? (y/n): ");
+            String choice = input.nextLine().trim();
+
+            if (choice.equalsIgnoreCase("n")) {
+                System.out.println("Returning to menu... ( ° ∀ ° )ﾉﾞ");
+                break;
             }
         }
     }
