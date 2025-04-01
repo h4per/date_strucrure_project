@@ -271,8 +271,8 @@ public class Date implements Comparable<Date> {
         while (true) {
             System.out.println("\nHere are your options:");
             System.out.println("1) Enter dates manually.");
-            System.out.println("2) View and sort date history.");
-            System.out.println("3) Compare two dates.");
+            System.out.println("2) Compare two dates.");
+            System.out.println("3) View and sort date history.");
             System.out.println("4) Exit.");
 
             System.out.print("\nChoose an option: ");
@@ -286,10 +286,10 @@ public class Date implements Comparable<Date> {
                         enterDateManually();
                         break;
                     case 2:
-                        showAndSortDates();
+                        compareDates();
                         break;
                     case 3:
-                        compareDates();
+                        showAndSortDates();
                         break;
                     case 4:
                         System.out.println("\nGoodbye! ( ° ∀ ° )ﾉﾞ");
