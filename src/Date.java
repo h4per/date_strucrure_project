@@ -143,6 +143,7 @@ public class Date implements Comparable<Date> {
         }
     }
 
+
     @Override
     public String toString() {
         return String.format("%02d/%02d/%04d", day, month, year);
@@ -166,7 +167,7 @@ public class Date implements Comparable<Date> {
             input.nextLine(); // Clear buffer
 
             Date userDate = new Date(day, month, year);
-            System.out.print("\n(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ \nYour date is ");
+            System.out.print("\nヽ(￣ω￣(。。 )ゝ \nYour date is ");
 
             if (userDate.isValidDate()) {
                 userDate.printDate();
