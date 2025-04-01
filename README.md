@@ -11,12 +11,11 @@ The program provides four main options:
 ---
 
 ## Features
-- Date validation with leap year support
-- Day of week calculation (e.g., "Monday")
-- Date difference calculation
-- Chronological sorting
-- History tracking
-- Error handling with emoji feedback (シ_ _)シ
+- Date validation with leap year support.
+- Day of week calculation (e.g., "Monday").
+- Date difference calculation.
+- Chronological sorting.
+- History tracking.
 
 ---
 
@@ -38,13 +37,37 @@ The program provides four main options:
    - `4` - Exit.
 
 
+### Example Usage
+#### Manual Input
+```
+Welcome to Date Structure project! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+Here are your options:
+1) Enter dates manually.
+2) View and sort date history.
+3) Compare two dates.
+4) Exit.
+
+Choose an option: 1
+
+Enter day (1-31): 16
+Enter month (1-12): 12
+Enter year: 2006
+
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ 
+Your date is December 16, 2006
+Day of week: Saturday
+Valid date!
+
+Add another date? (y/n): n
+Returning to menu... ( ° ∀ ° )ﾉﾞ
+```
 
 ---
 ## Dependencies
 - Java SE (JDK 8+)
 
 ---
-
 
 ## License
 This project is open-source under the MIT License.
