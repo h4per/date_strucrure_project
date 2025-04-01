@@ -143,6 +143,12 @@ public class Date implements Comparable<Date> {
         }
     }
 
+    @Override
+    public String toString() {
+        return String.format("%02d/%02d/%04d", day, month, year);
+    }
+
+
     // Method for manual date input
     public static void enterDateManually() {
         Scanner input = new Scanner(System.in);
@@ -210,7 +216,7 @@ public class Date implements Comparable<Date> {
         Collections.sort(dates);
 
         for (Date d : dates) {
-            System.out.println(d);
+            d.printDate();
         }
     }
 
