@@ -1,0 +1,15 @@
+Date structure Project
+
+Student: Islam Segizbaev
+Student ID: 240141006
+Group: COMCEH24
+
+Description:
+This is a Java-based date management system that handles date validation, calculations, and sorting. It supports both manual date entry and file input, while maintaining a history of all entered dates. The program provides four main options:
+
+1) Manual date entry – Users can input dates manually.
+2) Date comparison – Compare two dates and calculate the difference.
+3) Date history and sorting – View and sort all previously entered dates.
+
+Challenges encountered:
+
